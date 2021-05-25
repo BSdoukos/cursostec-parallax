@@ -1,0 +1,129 @@
+body {
+    background-color: #fff;
+    font-family: "Roboto", arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #999999;
+}
+a {
+    transition: 3s all ease;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 0 5%;
+}
+.site-hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    height: 107.5vh;
+    position: relative;
+    background-image: url(../images/home-bg4.jpg);
+}
+.bg-color {
+    background-color: black;
+}
+.quick-info {
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+.quick-info .container {
+    margin-left: 115px;
+}
+.quick-info .bg-color {
+    background-color: black;
+    padding: 40px 70px 10px 0;
+    position: relative;
+}
+.quick-info .bg-color::after, .quick-info .bg-color::before {
+    content: '';
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 115px;
+}
+.quick-info .bg-color::after {
+    left: -115px;
+}
+.quick-info .bg-color::before {
+    right: 115px;
+}
+.site-section {
+    padding: 3em 0;
+}
+.site-section-categories a {
+    display: block;
+    margin-bottom: 30px;
+}
+.site-section-categories a .img-wrapper {
+    position: relative;
+    top: 0;
+    color: white;
+}
+.site-section-categories a .img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    transition: 0.2s all ease;
+    opacity: 0.1;
+}
+.site-section-categories a:hover .img-wrapper::before {
+    opacity: 0.5;
+}
+.site-section-categories a .img-wrapper p {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(0);
+    width: 100%;
+    opacity: 0;
+    display: inline-block;
+    text-align: center;
+    transition: 0.2s all ease;
+}
+.site-section-categories a:hover .img-wrapper p {
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.site-section-differentials .fas {
+    font-size: 3em;
+    color: #ff6d24;
+}
+.cta-section {
+    background-image: url(../images/home-bg3.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+.cta-section [type="email"] {
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.form-control, .btn {
+    outline: none;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+.btn-black {
+    color: white;
+    background-color: black;
+}
+
+.element-animate {
+    opacity: 0;
+    visibility: hidden;
+}
